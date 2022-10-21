@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>Hi! </h1>
+    <h1>Hello </h1>
+   
+<button onclick="myFunc()" id="myBtn">Please Click Me</button>
+
+<script>
+    document.querySelectorAll('h1')[1].onclick=myFunc1;
+    function myFunc(){
+    
+    document.querySelector('h1').innerHTML="Thank You";
+    
+
+    }
+    function myFunc1(){
+    
+    document.querySelectorAll('h1')[1].innerHTML="Thank You1";
+    
+
+    }
+</script>
+</body>
+</html>

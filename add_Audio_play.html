@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        .MYButton{
+            background-color: red;
+            width: 100px;
+            height: 80px;
+            border-radius: 15px;
+            
+        }
+        .anim {
+            box-shadow: 0 15px 18px 0 tomato;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+   
+        
+            
+            <button class="MYButton a">a</button>
+            <button class="MYButton b">b</button>
+            <button class="MYButton c">c</button>
+
+        <script >
+            for (var i=0;i<3; i++){
+    document.querySelectorAll (".MYButton")[i].addEventListener ("click",function (){
+        var text = this.innerHTML;
+        console.log (text);
+        audioPlay (text);
+        PlayAnimation (text);
+
+    
+   
+});
+// Keypress Listener is start since here
+document.addEventListener ("keypress",function(event){
+    var text = event.key;
+    audioPlay (text);
+    PlayAnimation (text);
+})
+// Keypress Listener is closed
+function audioPlay (text){
+    switch (text){
+        case "a":
+        var audio = new Audio ("sounds/a.mp3");
+        audio.play();
+        break;
+        case "b":
+        var audio = new Audio ("sounds/b.mp3");
+        audio.play();
+        break;
+        case "c":
+        var audio = new Audio ("sounds/c.mp3");
+        audio.play();
+        break;
+    }
+}
+function PlayAnimation (text) {
+    var selectedButton = document.querySelector ("."+text);
+    selectedButton.classList.add ("anim");
+
+    setTimeout (function (){
+        selectedButton.classList.remove ("anim");
+    },1000);
+}
+
+}
+        </script>
+    
+</body>
+</html>

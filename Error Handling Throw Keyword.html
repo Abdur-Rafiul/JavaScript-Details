@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw Keyword</title>
+</head>
+<body>
+    <p>Enter a number Between 5 to 10</p>
+   <input type="text" id="Numfield">
+   <button id="Clickbutton">click</button>
+    <script>
+        document.querySelector ("#Clickbutton").addEventListener ("click",function (){
+           // alert("Button is clicked");
+           var num = document.querySelector ("#Numfield").value;
+           console.log (num);
+        //    if (num <10){
+        //        console.log ("Error");
+        //    }
+        try {
+            if (num <5){
+                throw "Input is too low"
+            }
+            else if (num >10){
+                throw "Input is too high"
+            }
+        } catch (err) {
+            console.log (err);
+
+        }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+  </head>
+  <body>
+    <h1 class="m"></h1>
+    <h1 id="m1"></h1>
+    <h1 class="m2"></h1>
+
+    <h1>Hi!</h1>
+    <h1>4!</h1>
+
+    <p></p>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif"/>
+
+    <p>First Name: <input name="fname" type="text" value="Michael"></p>
+
+    <span></span>
+
+    <script>
+      document.querySelector("h1").innerHTML = "I am Rafiul Islam";
+      document.querySelectorAll("h1")[4].innerHTML = "I am Rafiul Islam 4";
+      document.getElementById("m1").innerHTML = "I am ID";
+      document.getElementsByClassName("m2")[0].innerHTML = "I am Class";
+      let p = document.getElementsByTagName("h1")[3];
+      document.getElementsByTagName("p")[0].innerHTML = p.innerHTML;
+
+    p.style = 'color:red;font-size:40px';
+    document.getElementsByTagName("img")[0].src="https://www.w3schools.com/js/pic_bulbon.gif";
+   
+   let input = document.getElementsByTagName("input")[0].value;
+   document.getElementsByTagName("span")[0].innerHTML=input;
+
+
+    </script>
+  </body>
+</html>

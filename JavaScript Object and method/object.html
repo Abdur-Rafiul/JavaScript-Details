@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      let object = {
+        name: "Robin",
+        age: " 23",
+        university: " Daffodil International University",
+        arr: ["Marufa", "15"],
+        getName: function () {
+          return "Robin";
+        },
+      };
+
+      object.contact = " 01701-729512";
+      object.university = " DIU";
+
+      document.write(object.getName() + "<br>");
+      document.write(object.arr[0] + "<br>");
+      ///delete object.age;
+      //delete object["name"];
+
+      document.write(object.name + " " + object.age + "<br>");
+      let text = " ";
+      for (let x in object) {
+        text = text + object[x];
+      }
+
+     // document.write(text);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        
+      }
+        body {
+  font-family: Roboto;
+   background: #8E0E00; 
+
+
+
+  background: linear-gradient(to left, #a5a2a2, #5eff00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-sizing: border-box;
+}
+
+#container {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+h1 {
+  background: linear-gradient(to left, #fbff00, #ff0000);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+p {
+  padding-left: 20px;
+}
+
+form input[type="text"] {
+  width:10px;
+  
+}
+
+input {
+  padding-left: 20px;
+}
+
+#billamt {
+  font-size: 14px;
+  /*color: #2980b9;*/
+  color: red;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+}
+
+#billamt:focus {
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+#peopleamt {
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 20px;
+  color: red;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  position: relative;
+  top: 20px;
+  margin: 40px;
+  right: 20px;
+
+}
+#percent{
+    width: 60%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 20px;
+  color: red;
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+.dollarSign {
+  display: inline;
+}
+
+#serviceQual {
+  padding: 13px 13px 20px 20px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.btnn {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: linear-gradient(to left, #008cff, #ff009d);
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+ position: relative;
+ bottom: 30px;
+  color: white;
+  box-shadow: #d0ff00 1px 2px ;
+}
+
+.btnn:hover {
+ 
+  background: linear-gradient(to left, #2600ff, #ff00ea);
+  
+}
+
+
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+#p{
+    position: relative;
+     top: 30px;
+}
+.button1{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    left: 15px;
+}
+.button2{
+    width: 20px;
+    height: 30px;
+}
+.button3{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+.button4{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    right: 60px;
+}
+.cal{
+  position: relative;
+  left: 400px;
+  bottom: 400px;
+}
+.two{
+    position: relative;
+    bottom: 48px;
+    left: 60px;
+    color: rgb(255, 0, 0);
+}
+.tw{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.three{
+    position: relative;
+    bottom: 48px;
+    left: 60px;
+    color: rgb(255, 0, 0);
+}
+.thre{
+  color: rgb(0, 0, 0);
+}
+.per1{
+  position: relative;
+  bottom: 50px;
+
+}
+.per2{
+  position: relative;
+  bottom: 60px;
+  left: 35px;
+
+}
+.to{
+  position: relative;
+  font-size: 70px;
+  bottom: 30px;
+  left: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: #ff1008 1px 2px;
+}
+.tipp{
+  color: #ffffff;
+  font-size: 30px;
+}
+.t{
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+  
+}
+span{
+  position: relative;
+  bottom:  30px;
+}
+#er{
+  position: relative;
+  top: 20px;
+}
+.profile{
+  width: 30%;
+  height: 100px;
+ 
+border-radius: 50%;
+/* background-attachment: fixed; */
+
+position: relative;
+left: 228px;
+bottom: 80px;
+border: rgb(166, 255, 0) 3px solid;
+
+
+}
+.para{
+  position: relative;
+ bottom: 100px;
+
+}
+.cover{
+  width: 1250px;
+  height: 200px;
+  position: relative;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+      
+        <h1>Tip Calculator</h1>
+
+        <div id="calculator">
+      
+      
+          <form>
+            <p>How much was your bill?
+              <p>
+               $  <input id="billamt" type="text" placeholder="Bill Amount" value="">
+      
+                <p>
+                  <p>
+          
+                  
+                    <img class="profile" src="image/s.jpg">
+
+                 
+
+                   
+          </form>
+          <div class="para">
+
+         
+          
+          <p>  How was your service?   </p>
+         <button class="button1">-</button><input id="percent" class="single" type="text" placeholder="Tip%" value=""> <button class="button2">+</button><p></p>
+          <p id="er">How many people are sharing the bill?</p>
+         <span>
+          <button class="button3">-</button><input id="peopleamt" type="text" placeholder="Number of People"> <button class="button4">+</button>
+
+         </span> 
+        
+          <button type="button" id="calculate" class="btnn">Calculate!</button>
+          <div class="cal">
+            <span class="tipp">Tip</span>
+            <h2 class="tw">BDT <h2 class="two">0.00</h2></h2>
+            <span class="per1">PER PERSON</span>
+            <p></p>
+            <span class="to">Total</span>
+            <div class="t">
+              <h2 class="thre">BDT <h2 class="three">0.00</h2></h2>
+            </div>
+           
+            <span class="per2">PER PERSON</span>
+          </div>
+         
+
+          
+
+      
+        </div>
+      </div>
+        
+      <script>
+      var count1=0,count2=0,count0=0,c=0;
+      var btn1=document.querySelector(`.button1`);
+      var btn2=document.querySelector(`.button2`);
+      var btn3=document.querySelector(`.button3`);
+      var btn4=document.querySelector(`.button4`);
+      var cal=document.querySelector(`#calculate`);
+      var inputs=document.querySelectorAll(`input`);
+      inputs[0].addEventListener(`change`,function(event){ 
+        count0=parseFloat (inputs[0].value);
+       
+       
+      });
+      inputs[1].addEventListener(`change`,function(event){ 
+        count1=parseFloat (inputs[1].value);
+       
+       
+      });
+      inputs[2].addEventListener(`change`,function(event){
+
+        count2=parseFloat (inputs[2].value);
+       
+      
+      
+      });
+      btn2.addEventListener(`click`,()=>{
+        
+          count1++;
+      
+        
+      inputs[1].value=count1;
+     count1=parseFloat( inputs[1].value);
+   
+     
+
+      });
+      btn1.addEventListener(`click`,()=>{
+        
+          count1--;
+       
+        inputs[1].value=count1;
+      
+        count1=parseFloat( inputs[1].value);
+        
+
+
+      });
+      btn4.addEventListener(`click`,()=>{
+
+        count2++;
+
+        inputs[2].value=count2;
+        count2=parseFloat( inputs[2].value);
+       
+         
+        
+      });
+      btn3.addEventListener(`click`,()=>{
+        
+          count2--;
+        
+        inputs[2].value=count2;
+
+      
+        count2=parseFloat( inputs[2].value);
+        
+
+
+      });
+     
+      cal.addEventListener(`click`,function(event){
+        
+         if(count1==0 && count0==0 && count2==0){
+       
+        alert(`Please Enter Your Needed Input`);
+        
+       }
+      
+       else if(count1==0 && count2==0 ){
+        
+        alert(`Please Enter Your Tip% and Person Number`);
+       }
+       else if(count2==0 && count0==0 ){
+        alert(`Please Enter Your Bill Amount and Person Number`);
+       }
+       else if(count0==0){
+        alert(`Please Enter Your Bill Amount`);
+
+       }
+      
+       else if(count1==0){
+        alert(`Please Enter Your Tip%`);
+
+       }
+       else if(count2==0){
+        alert(`Please Enter Your Person Number`);
+       }
+       
+       else { 
+         if(count0>=0){
+          var tipPer,valid0=0,tip,Total,totalper,total;
+        
+
+        tip=(count0*count1)/100;
+
+        tipPer=tip/count2;
+         tipPer=tipPer*85;
+         total=(count0+tip);
+         totalper=total/count2;
+         totalper=totalper*85;
+        tipPer=tipPer.toFixed(2);
+          totalper=totalper.toFixed(2);
+        document.querySelector(".two").innerHTML=tipPer;
+        document.querySelector(".three").innerHTML=totalper;
+         } 
+      
+          else{
+
+            alert(`Please Enter Your Right Input`);
+          }
+          if(count1>=0){
+          var tipPer,valid0=0,tip,Total,totalper,total;
+        
+
+        tip=(count0*count1)/100;
+
+        tipPer=tip/count2;
+         tipPer=tipPer*85;
+         total=(count0+tip);
+         totalper=total/count2;
+         totalper=totalper*85;
+        tipPer=tipPer.toFixed(2);
+          totalper=totalper.toFixed(2);
+        document.querySelector(".two").innerHTML=tipPer;
+        document.querySelector(".three").innerHTML=totalper;
+         } 
+      
+          else{
+            
+            alert(`Please Enter Your Right Input`);
+          }
+          if(count2>=0){
+          var tipPer,valid0=0,tip,Total,totalper,total;
+        
+
+        tip=(count0*count1)/100;
+
+        tipPer=tip/count2;
+         tipPer=tipPer*85;
+         total=(count0+tip);
+         totalper=total/count2;
+         totalper=totalper*85;
+        tipPer=tipPer.toFixed(2);
+          totalper=totalper.toFixed(2);
+        document.querySelector(".two").innerHTML=tipPer;
+        document.querySelector(".three").innerHTML=totalper;
+         } 
+      
+          else{
+            
+            alert(`Please Enter Your Right Input`);
+          }
+       }
+      
+       
+       
+       
+
+            
+});
+       
+        
+
+      </script>
+
+</body>
+</html>

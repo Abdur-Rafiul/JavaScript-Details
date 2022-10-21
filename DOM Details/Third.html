@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+    <style>
+        .heading{
+         color: blue;
+        }
+        .heading1{
+         color: rgb(255, 0, 179);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi! Assalamualikum</h1>
+     <h2 class="heading">hi</h2>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magni officia, pariatur debitis temporibus laborum possimus quibusdam illum aut dolorum! Quisquam molestiae natus perspiciatis odio, reprehenderit dicta excepturi id doloremque?
+     </p>
+
+    <script>
+     document.querySelector('h1').onmouseover=myFunc;
+     document.querySelector('h1').onmouseout=myFunc1;
+     function myFunc(){
+       document.getElementsByTagName('h1')[0].innerHTML = "hello";
+    }
+     function myFunc1(){
+       document.getElementsByTagName('h1')[0].innerHTML = "Hi! Assalamualikum";
+     
+    }
+
+    document.getElementsByTagName('h2')[0].classList.add('heading1');
+
+    document.querySelector('p').addEventListener('click', function(){
+        document.querySelector('p').classList.add('heading');
+        
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+    <script>
+        function Person(name, age){
+        this.fullName = name;
+        this.Age = age;
+        
+        }
+
+        let Robin = new Person("Robin Khan", 23);
+        let Rakib = new Person("Rakib Khan", 23);
+
+        document.write(Rakib.fullName);
+    </script>
+</body>
+</html>

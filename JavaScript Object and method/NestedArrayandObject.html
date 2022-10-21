@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Array and Object</title>
+</head>
+<body>
+    <script>
+        const object = {
+         
+            name:"Marufa",
+            arr:[{name:"Jamila", age:10, family:["1"]},
+                 {name:"Marufa", age:15, family:["1"]},
+                ]
+        
+        }
+
+        document.write(object.arr[0].name + " "+ object.arr[0].family[0]+"<br>")
+        document.write(object.arr[1].name + " "+ object.arr[1].family[0])
+    </script>
+</body>
+</html>

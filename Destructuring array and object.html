@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ///Array Destructuring 
+        let numbers = [10,20,30,40,50,60,70,80,90];
+        let [num1,num2,num3,num4,...z]=numbers
+        console.log(numbers[0]);
+        console.log(numbers);
+        console.log(z);
+        console.log(num2);
+        ///swap Desturing
+        let a=10,b=20;
+        [a,b]=[b,a];
+        console.log(`${a} Swap `);
+        console.log(b);
+      //  object Destructuring and nested object Destructures
+      const studentInfo = {
+          id:2265,
+          name : "Rafiul islam",
+          gpa:3.30,
+          languages:{
+              native:'Bangla',
+              beginar :"English"
+          }
+      }
+      const {id,name,gpa,languages}=studentInfo
+      console.log(id);
+      console.log(name);
+      console.log(gpa);
+      console.log(languages.native);
+      
+
+      //Destructuring Function Parameters
+      const studentinfo = ({id,fullName}) =>{
+          console.log(id);
+          console.log(fullName);
+      }
+      const student = {
+          id:1,
+          fullName:"Faltu",
+
+      }
+      studenti//'nfo(student);
+
+        
+    </script>
+</body>
+</html>

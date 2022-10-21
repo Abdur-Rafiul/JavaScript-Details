@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+    <script>
+        function Student1 (name,age){
+            return {
+                name,
+                age
+            }
+        }
+
+        console.log (Student1("Rafiul Islam",23));
+
+        
+        let message={
+            body : function(){
+                return 'Hi ,My name is Rafiul Islam'
+            }
+
+        }
+        console.log(message.body());
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Method</title>
+</head>
+<body>
+    <script>
+            const object = {
+
+                name : "Rafiul Islam Robin Khan",
+            
+                  func: function(){
+                      
+                    return this.name ;
+                }
+            }
+
+            object.universityName = function(){
+             
+                return "Daffodil International University"
+                
+            }
+
+
+
+            document.write(object.func()+"<br>");
+            document.write(object.universityName()+"<br>");
+
+    </script>
+</body>
+</html>

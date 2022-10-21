@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Function</title>
+</head>
+<body>
+    <script>
+        function Summation(name, callback){
+          
+             document.write(name + "<br>");
+        let a = 10, b= 10;
+             callback(a, b);
+        }
+
+        function multiplication(a, b){
+        
+          document.write(a+b);
+        }
+
+        Summation("Robin", multiplication);
+    </script>
+</body>
+</html>

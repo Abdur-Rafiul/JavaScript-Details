@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numofwon=0;
+        var numoflost=0;
+        for (var i=1;i<=5;i++){
+            var gussingNumber=parseInt(prompt("Enter a Number from 1 to 5"));
+            var randomNumber=Math.floor(Math.random()*5)+1;
+            if (gussingNumber==randomNumber){
+                console.log("You have won");
+                numofwon++;
+            }
+            else{
+                console.log("You have lost.Random Number was"+randomNumber);
+               numoflost++;
+            }
+        }
+        document.write("Total Number of won="+numofwon+"<br>");
+        document.write("Total Number of lost="+numoflost+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta ht
+    tp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+         .style{
+             color:red;
+             font-size:3.5rem;
+             font-weight:bold;
+         }
+    </style>
+</head>
+<body>
+    <!-- //<button>Click me</button> -->
+    <h1>
+        I Love My Bangladesh
+    </h1>
+    <script>
+       
+        var my=document.querySelector("h1");
+        my.addEventListener("mouseover",function () {
+         
+           my.classList.add ("style");
+           
+        } );
+        my.addEventListener("mouseout",function () {
+         
+        
+         my.classList.remove ("style");
+      } );
+         // var my=document.querySelector("button").addEventListener("mouseover",function (){
+        //    document.write("Robin Khan");
+        //    my.classList.add("para-style");
+        // })
+          //document.write("Robin Khan");
+        // function ev(){
+        //    document.write("Robin Khan");
+        // }
+    </script>
+    
+</body>
+</html>

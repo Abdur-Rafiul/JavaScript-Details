@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map,Filter Arrow function of help</title>
+</head>
+<body>
+    <script>
+        var students = [
+            {
+                id: 2265,
+                name:"Rafiul Islam",
+                age : 21,
+
+            },
+            {
+                id: 2264,
+                name:"Rakibull Islam",
+                age : 23,
+
+            },
+            {
+                id: 2266,
+                name:"Arju Islam",
+                age : 23,
+
+            },
+            {
+                id: 2267,
+                name:"Ariyan Islam",
+                age : 25,
+
+            },
+        ]
+        function studentNames (){
+           return students.filter (function(x){
+                return x.age<22
+
+
+            }).map(function(y){
+                return y.name;
+            })
+
+
+
+            }
+        console.log(studentNames());
+    </script>
+</body>
+</html>

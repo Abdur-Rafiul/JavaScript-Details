@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div">
+        <h1>Robin khan</h1>
+        <h1>rafiul</h1>
+    </div>
+    <!-- <h1 class="heading1">Robin khan is my name</h1> -->
+    <script>
+    //    var link= document.getElementsByClassName("heading1")[0];
+        // link.innerHTML="yedddds";
+        // link.style.textDecoration="underline";
+        //  link.style.color ="red";
+        //  link.style.fontSize = "5rem";
+         var heading3=document.createElement("h1");
+         var text=document.createTextNode("Miapur Hajipara Bongram Bazar Pabna");
+         heading3.appendChild(text);
+         var mydiv=document.getElementById("my-div");
+         mydiv.appendChild(heading3);
+         var re=document.getElementsByTagName("h1")[1];
+         mydiv.removeChild(re);
+         var heading0=document.createElement("h1");
+         var text0=document.createTextNode(" lorem30");
+         heading0.appendChild(text0);
+        //  mydiv.appendChild(text0);
+        var heading1=document.getElementsByTagName("h1")[0];
+        mydiv.insertBefore(heading0,heading1);
+
+
+         
+    
+    </script>
+</body>
+
+</html>

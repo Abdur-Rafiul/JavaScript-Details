@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Taskone = (callback)=>{
+            console.log(`one is one  `);
+            callback();
+
+        };
+        // const DataLoading = () =>{
+        //     console.log("Task2.Data Loading");
+            
+        // }
+
+        // const Tasktwo = (callback)=>{
+        //    setTimeout (DataLoading,3000);
+        //    callback();
+
+        // };
+
+
+        const Tasktwo = (callback)=> {
+           setTimeout( () => {
+            console.log("Task2.Data Loading");
+           
+            callback();
+            
+        }, 3000);
+          
+
+        };
+        
+        
+        
+        
+        const Taskthree = ()=>{
+            console.log("Three");
+
+        };
+        const Taskfour = ()=>{
+            console.log("four");
+
+        };
+        // Taskone();
+        // Tasktwo();
+        // Taskthree();
+        // Taskfour();
+       
+         Taskone ( function f1(){
+             Tasktwo( function f2(){
+                 Taskthree();
+             });
+
+            
+         });
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler to Onclick Event</title>
+</head>
+<body>
+    <img src="#" alt="" class="picture" height="300px" width="300px">
+    <button onClick="Mymessage1()">click me 1 </button>
+    
+    <button onClick="Mymessage2()">click me 2 </button>
+
+    <script>
+        function Mymessage1(){
+            document.querySelector(".picture").src="image/bn.jpg";
+        }
+        function Mymessage2(){
+            alert("My name is Robin ");
+        }
+    </script>
+</body>
+</html>

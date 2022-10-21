@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box" data-extra="attrToRemove" data-atr="box1" ></div>
+    <h4>Box 1</h4>
+    <ul id="box">
+        <li>about This size</li>
+        <li>Rafiul Islam</li>
+        <li>Robin</li>
+        <p>
+    
+            
+                gg
+            </h5>
+            <h6>fgf</h6>
+        </p>
+    </ul>
+
+
+    <h1>R</h1>
+    <h2>K</h2>
+    <h3>a</h3>
+    </div>
+    <script>
+       var box=document.querySelector(`[data-atr="box1"]`);
+       var all=document.querySelectorAll(`h1,h2,h3`);
+       var l=document.querySelector(`li:first-child`);
+       var last=document.querySelector(`li:last-child`);
+       var all=document.querySelectorAll(`li:first-child,li:last-child`);
+       var arra=Array.prototype.slice.call(all);
+       var pa=document.getElementById(`box`);
+        //var d=pa.children;
+    //var d=pa.childNodes;
+    var d=pa.children[3].children;
+       
+    </script>
+</body>
+</html>

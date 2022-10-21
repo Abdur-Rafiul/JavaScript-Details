@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,78];
+// var squareNumbers=numbers.map(myfunction);;
+
+// function myfunction(x)
+// {
+//     console.log(x);
+//     return (x*x);
+    
+// }
+// console.log(squareNumbers);
+// console.log(numbers);
+var newNumbers=numbers.filter(myfunction);;
+
+function myfunction(x)
+{
+    console.log(x);
+    return x>10;
+    
+}
+console.log(newNumbers);
+console.log(numbers);
+    </script>
+</body>
+</html>
